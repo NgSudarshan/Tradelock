@@ -10,25 +10,25 @@ export type Character = {
     created_at: string;
 };
 
-export type CharacterWithChange = Character & {
+export type CharacterWithChange = Character & { /*This will calculate the price change % and contains the starting price*/
     change_pct: number;
     open_price: number;
 };
 
-export type Holding = {
+export type Holding = { /*This will contain the user_id, character_id, no. of shares and cost basis for that character */
     user_id: string;
     character_id: string;
     shares: number;
     cost_basis: number;
 };      
 
-export type PricePoint = {
+export type PricePoint = { /*This will contain the character_id, price and timestamp for that price point */
     character_id: string;
     price: number;
     ts: string;
 };
 
-export type Transaction = {
+export type Transaction = { /*This will contain the transaction details for each buy/sell order */
     id: number;
     user_id: string;        
     character_id: string;
@@ -39,7 +39,7 @@ export type Transaction = {
     created_at: string;
 };
 
-export type User = {
+export type User = { /*This will contain the user details like id, handle, balance and created_at timestamp */
     id: string;
     handle: string;
     balance: number;
