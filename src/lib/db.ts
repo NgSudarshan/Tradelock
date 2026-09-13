@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS transactions (
  shares REAL NOT NULL,
  price REAL NOT NULL,
  total REAL NOT NULL,
- created_at TEXT NOT NULL DEFAULT (datetime('now))
+ created_at TEXT NOT NULL DEFAULT (datetime('now'))
 );
 
 CREATE TABLE IF NOT EXISTS price_history (
