@@ -25,7 +25,7 @@ export type Holding = { /*This will contain the user_id, character_id, no. of sh
 export type PricePoint = { /*This will contain the character_id, price and timestamp for that price point */
     character_id: string;
     price: number;
-    ts: string;
+    ts: string;/*short for timestamp, this will be used to track the price changes over time for each character */
 };
 
 export type Transaction = { /*This will contain the transaction details for each buy/sell order */
